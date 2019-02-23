@@ -11,10 +11,10 @@ const app = express();
 app.use(express.static('public'));
 app.set('view engine', 'ejs');
 
-const baseRoutes = require('./routes/index');
+const notesRoutes = require('./routes/notes');
 const bodyParser = require('body-parser');
 
-app.use('/', baseRoutes);
+app.use('/', notesRoutes);
 
 // support json encoded bodies
 app.use(bodyParser.json());
