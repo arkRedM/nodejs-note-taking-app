@@ -1,0 +1,27 @@
+{
+  "name": "nodejs-note-taking-app",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arkRedM/nodejs-note-taking-app"
+  },
+  "keywords": [
+    "node",
+    "Web",
+    "Development",
+    "Getting",
+    "Started"
+  ],
+  "author": "Abhinav Reddy",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "nodemon": "^1.18.10"
+  }
+}
