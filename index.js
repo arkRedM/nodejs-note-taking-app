@@ -6,10 +6,10 @@
     which can be directly plugged into Express.
 */
 
-const express = require('express')
-const app = express()
+const express = require('express');
+const app = express();
 app.set('view engine', 'ejs');
-const port = 3000
+const port = 3000;
 
 const helloRoutes = require('./routes/index');
 const bodyParser = require('body-parser');
@@ -25,4 +25,4 @@ app.get('*', function(req, res){
     return res.render('404')
 });
 
-app.listen(3000)
+app.listen(3000);
