@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width; initial-scale=1">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+</head>
+
+<body>
+<section class="hero is-success">
+    <div class="hero-body ">
+        <div class="container is-success">
+            <h1 class="title">
+                Note Post Form
+            </h1>
+            <h2 class="subtitle">
+                note post form
+            </h2>
+        </div>
+    </div>
+</section>
+<div class="container">
+
+    <form method="POST">
+
+        <div class="field column is-three-quarters">
+            <label class="label is-small">Title</label>
+            <div class="control" >
+                <input class="input"
+                       name="title"
+                       tabindex="1"
+                >
+            </div>
+        </div>
+
+        <div class="field column is-three-quarters">
+            <label class="label is-small">Sub Title</label>
+            <div class="control" >
+                <input class="input"
+                       name="subtitle"
+                       tabindex="2"
+                >
+            </div>
+        </div>
+
+        <div class="field column is-three-quarters">
+            <label class="label is-small">Notes</label>
+            <div class="control" >
+                <input class="input"
+                       name="notes"
+                       tabindex="3"
+                >
+            </div>
+        </div>
+
+        <button type="submit" class="buttion is-primary">Add Note</button>
+    </form>
+
+</div>
+</body>
+
+</html>`
