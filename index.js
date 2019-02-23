@@ -8,13 +8,13 @@
 
 const express = require('express');
 const app = express();
+app.use(express.static('public'));
 app.set('view engine', 'ejs');
-const port = 3000;
 
-const helloRoutes = require('./routes/index');
+const baseRoutes = require('./routes/index');
 const bodyParser = require('body-parser');
 
-app.use('/', helloRoutes);
+app.use('/', baseRoutes);
 
 // support json encoded bodies
 app.use(bodyParser.json());
@@ -25,4 +25,4 @@ app.get('*', function(req, res){
     return res.render('404')
 });
 
-app.listen(3000);
+app.listen(8000);
