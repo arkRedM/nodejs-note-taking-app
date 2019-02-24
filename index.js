@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 /* db */
 const mongoose = require('mongoose');
-let dev_db_url = 'mongodb+srv://user:<PASSWORD>@cluster0-hsnw0.mongodb.net/test?retryWrites=true';
+let dev_db_url = 'mongodb+srv://<username>:<password>@cluster0-hsnw0.mongodb.net/test?retryWrites=true';
 let mongoDB = process.env.MONGODB_URI || dev_db_url;
 
 mongoose.connect(mongoDB, { useNewUrlParser: true });

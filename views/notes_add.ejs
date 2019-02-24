@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <meta name="viewport" content="width=device-width; initial-scale=1">
-    <title><%= title %></title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <% include components/html_head.ejs%>
 </head>
 
 <body>
@@ -12,19 +9,18 @@
     <div class="hero-body ">
         <div class="container">
             <h1 class="title">
-                Note Post Form
+                New Note Form
             </h1>
             <h2 class="subtitle">
-                note post form
+                Create a new note
             </h2>
         </div>
     </div>
 </section>
-<div class="container">
+<div class="container form-container">
 
-    <form method="POST">
-
-        <div class="field column is-three-quarters">
+    <form method="POST" class="card">
+        <div class="field column">
             <label class="label is-small">Title</label>
             <div class="control" >
                 <input class="input"
@@ -33,8 +29,7 @@
                 >
             </div>
         </div>
-
-        <div class="field column is-three-quarters">
+        <div class="field column">
             <label class="label is-small">Sub Title</label>
             <div class="control" >
                 <input class="input"
@@ -43,19 +38,23 @@
                 >
             </div>
         </div>
-
-        <div class="field column is-three-quarters">
+        <div class="field column">
             <label class="label is-small">Notes</label>
             <div class="control" >
-                <input class="input"
-                       name="description"
-                       tabindex="3"
-                >
+                <textarea class="textarea"
+                          name="description"
+                          tabindex="3"
+                          rows="5"
+                ></textarea>
             </div>
         </div>
 
         <button type="submit" class="button is-success">Add Note</button>
+        <!--make url dynamic like django templates-->
+        <a href="/notes/list" class="button is-outlined is-primary is-pulled-right">View List</a>
+
     </form>
+
 </div>
 </body>
 

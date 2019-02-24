@@ -1,0 +1,49 @@
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-flow: row wrap;
+  margin-bottom: 20px;
+}
+.card-container .button-container {
+  display: flex;
+  margin-top: 20px;
+  justify-content: flex-end;
+}
+.card-container .button-container button {
+  margin-left: 10px;
+}
+.card-container > div {
+  width: 100%;
+}
+.card-container > div.card {
+  margin-top: 20px;
+}
+.card-container > div.card pre {
+  background-color: unset;
+  color: unset;
+  font-size: unset;
+  overflow-x: unset;
+  padding: unset;
+  word-wrap: normal;
+}
+.card-container > div.card form {
+  padding: 0 0 20px 0;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.form-container form {
+  margin-top: 30px;
+  padding: 30px;
+}
+.form-container form input {
+  width: 100%;
+}
+
+/*# sourceMappingURL=all_styles.css.map */

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <% include components/html_head.ejs%>
+</head>
+
+<body>
+<section class="hero is-primary">
+    <div class="hero-body ">
+        <div class="container">
+            <h1 class="title">
+                Notes List
+            </h1>
+            <h2 class="subtitle">
+                List of notes
+            </h2>
+        </div>
+    </div>
+</section>
+
+<div class="container card-container">
+    <div class="button-container">
+        <!--make this url dynamic like how django does.-->
+        <a href="/notes/add" class="button is-success" >Add New Note</a>
+    </div>
+    <% if(notes_list.length > 0 ) { %>
+        <% for(var i=0; i<notes_list.length; i++) { %>
+            <div class="card">
+                <div class="card-content">
+                    <p class="title">
+                        <%= notes_list[i].title %>
+                    </p>
+                    <p class="subtitle">
+                        <%= notes_list[i].subtitle %>
+                    </p>
+                    <pre class="description"><%= notes_list[i].description %></pre>
+                    <form action="/notes/delete" method="POST" class="is-pulled-right">
+                        <input type="hidden" value="<%= notes_list[i].title %>" name="title"/>
+                        <button type="submit" class="button is-danger">Delete</button>
+                    </form>
+                </div>
+
+            </div>
+        <% } %>
+    <% } else{%>
+        <h1> Use Add New Note to add a new note.</h1>
+    <% }%>
+</div>
+</body>
+</html>
