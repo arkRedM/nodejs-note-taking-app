@@ -47,5 +47,4 @@ then goto ```http://localhost:8000/``` and explore.
 1. Authentication method to manage Individual Notes.
 2. Sharing Notes among users as a basic functionality feature.
 
-
 Please do Raise Issues and PR's are always welcome ~(˘▾˘~)
