@@ -12,7 +12,7 @@
   justify-content: flex-end;
 }
 .card-container .button-container button {
-  margin-left: 10px;
+  margin-left: 10 10px;
 }
 .card-container > div {
   width: 100%;
@@ -27,6 +27,7 @@
   overflow-x: unset;
   padding: unset;
   word-wrap: normal;
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .card-container > div.card form {
   padding: 0 0 20px 0;

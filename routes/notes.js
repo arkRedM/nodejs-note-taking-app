@@ -4,6 +4,9 @@ const NoteData = require('../models/notes');
 
 var router = express.Router();
 
+router.get('/', (req, res) => {
+    res.redirect('/notes/add');
+});
 
 router.get('/add', (req, res) => {
     res.render("notes_add", {title: "Add Notes"})

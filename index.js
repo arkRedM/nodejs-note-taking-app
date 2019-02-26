@@ -13,11 +13,11 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-/* db */
-const mongoose = require('mongoose');
-let dev_db_url = 'mongodb+srv://<username>:<password>@cluster0-hsnw0.mongodb.net/test?retryWrites=true';
-let mongoDB = process.env.MONGODB_URI || dev_db_url;
+/* DB setup */
+let dev_db_url = 'mongo-db-url'; // use standard url obtained from mlab here. alternatively connect to local mongodb server
 
+const mongoose = require('mongoose');
+let mongoDB = process.env.MONGODB_URI || dev_db_url;
 mongoose.connect(mongoDB, { useNewUrlParser: true });
 mongoose.Promise = global.Promise;
 let db = mongoose.connection;
@@ -31,9 +31,9 @@ app.set('view engine', 'ejs');
 const notesRoutes = require('./routes/notes');
 app.use('/notes', notesRoutes);
 
-// 404
-app.get('*', function(req, res){
-    return res.render('404')
+//redirect to notes by default
+app.get('/', function(req, res){
+    return res.redirect('/notes/add')
 });
 
 app.listen(8000);
