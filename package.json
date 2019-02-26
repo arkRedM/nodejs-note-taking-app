@@ -1,6 +1,17 @@
 {
   "name": "nodejs-note-taking-app",
+  "version": "0.0.1",
+  "description": "First of All a huge shout-out to Facebook Developer Circle Raipur for organising a Node.js workshop on 23rd February 2019.",
   "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.15",
+    "node-sass-middleware": "^0.11.0",
+    "nodemon": "^1.18.10"
+  },
+  "devDependencies": {},
   "scripts": {
     "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,27 +21,23 @@
     "url": "git+https://github.com/arkRedM/nodejs-note-taking-app.git"
   },
   "keywords": [
+    "nodejs",
+    "ejs",
+    "mongodb",
+    "scss",
+    "nodemon",
+    "bulma",
+    "note-taking",
     "node",
     "Web",
     "Development",
     "Getting",
     "Started"
   ],
-  "author": "Abhinav Reddy",
+  "author": "Abhinav Reddy Mothe",
   "license": "MIT",
-  "dependencies": {
-    "body-parser": "^1.18.3",
-    "ejs": "^2.6.1",
-    "express": "^4.16.4",
-    "mongoose": "^5.4.15",
-    "node-sass-middleware": "^0.11.0",
-    "nodemon": "^1.18.10"
-  },
-  "description": "First of All a huge shout-out to Facebook Developer Circle Raipur for organising a Node.js workshop on 23rd February 2019.",
   "bugs": {
     "url": "https://github.com/arkRedM/nodejs-note-taking-app/issues"
   },
-  "homepage": "https://github.com/arkRedM/nodejs-note-taking-app#readme",
-  "version": "0.0.1",
-  "devDependencies": {}
+  "homepage": "https://github.com/arkRedM/nodejs-note-taking-app#readme"
 }
