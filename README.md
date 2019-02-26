@@ -8,7 +8,7 @@ First of All a huge shout-out to Facebook Developer Circle Raipur for organising
 
 One of the things that was highlighted during the workshop was __To build a Note Taking CRUD app using MongoDB, EJS, Express.js and Node.js__
 
-The process for setup is as follows
+The process is straight forward
 ## Step 1
 Clone the repo or download zip
 ```
@@ -49,4 +49,4 @@ then goto ```http://localhost:8000/``` and explore.
 1. Authentication method to manage Individual User Notes.
 2. Sharing Notes among users as a basic feature.
 
-Please do Raise Issues and PR's are always welcome ~(˘▾˘~)
+Please do Raise Issues and PR's are always welcome (ᵔᴥᵔ)
