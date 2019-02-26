@@ -1,4 +1,7 @@
 # Nodejs-Basic Note Taking App
+
+[![Join the chat at https://gitter.im/nodejs-note-taking-app/community](https://badges.gitter.im/nodejs-note-taking-app/community.svg)](https://gitter.im/nodejs-note-taking-app/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ###### nodejs, ejs, mongodb, scss, bulmacss
 
 First of All a huge shout-out to Facebook Developer Circle Raipur for organising a Node.js workshop on 23rd February 2019.
